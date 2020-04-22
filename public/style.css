@@ -1,0 +1,39 @@
+html {
+    font-family: Roboto, sans-serif;
+    background-color:  black;
+    padding: 10vh;
+    margin: auto;
+}
+
+header {
+    padding-top: 0;
+    margin-top: 0;
+    color: azure;
+    text-align: center;
+}
+
+a {
+    color: teal;
+}
+
+h1 {
+    text-align: center;
+}
+
+header  {
+    font-size: 20;
+}
+
+.pfp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 25vw;
+}
+
+.emoji {
+    font-family: sans-serif;
+    font-size: 20vh;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
