@@ -1,39 +1,49 @@
-html {
-    font-family: Roboto, sans-serif;
-    background-color:  black;
-    padding: 10vh;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    background: radial-gradient(circle, #383838, #303030, #282828, #252525, #242424, #232323);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.main {
+    font-weight: bold;
+    position: absolute;
+    top: 25vh;
+    left: 35vw;
+    height: 30vh;
+    width: 30vw;
     margin: auto;
+    z-index: 2;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 header {
     padding-top: 0;
     margin-top: 0;
     color: azure;
-    text-align: center;
+    font-size: 1.5vw;
 }
 
 a {
-    color: teal;
-}
-
-h1 {
-    text-align: center;
-}
-
-header  {
-    font-size: 20;
-}
-
-.pfp {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 25vw;
+    color: #00bbbb;
+    font-weight: bolder;
 }
 
 .emoji {
-    font-family: sans-serif;
     font-size: 20vh;
-    padding-bottom: 0px;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
 }
