@@ -4,7 +4,7 @@ body {
 }
 
 canvas {
-    background: radial-gradient(circle, #383838, #303030, #282828, #252525, #242424, #232323);
+    background: radial-gradient(circle, #323232, #292929, #181818, #151515, #141414, #131313);
     margin: 0;
     padding: 0;
     position: absolute;
@@ -12,15 +12,13 @@ canvas {
 }
 
 .main {
-    font-weight: bold;
     position: absolute;
-    top: 25vh;
+    top: 43vh;
     left: 35vw;
     height: 30vh;
     width: 30vw;
     margin: auto;
     z-index: 2;
-    font-family: Roboto, sans-serif;
     text-align: center;
 }
 
@@ -30,20 +28,22 @@ canvas {
     display: table;
 }
 
-header {
+h1 {
+    font-family: Roboto, sans-serif;
+    letter-spacing: 1vw;
+    font-weight: lighter;
     padding-top: 0;
     margin-top: 0;
     color: azure;
-    font-size: 1.5vw;
+    font-size: 3vw;
 }
 
 a {
-    color: #00bbbb;
-    font-weight: bolder;
-}
-
-.emoji {
-    font-size: 20vh;
-    padding: 0;
-    margin: 0;
+    font-family: Roboto, sans-serif;
+    padding-top: 0;
+    margin-top: 0;
+    color: #00d1d1;
+    font-size: 2.5vw;
+    font-weight: normal;
+    text-decoration: none;
 }
