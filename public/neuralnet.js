@@ -20,16 +20,35 @@ let stars = [], // Array that contains the stars
         y: 0
     };  // mouse location
 
+// todo regulate node distribution
+// r = radius from center text
+// P = probability of star spawning
+
+function starP(r) {
+    return ((width * height) / 200000000000) * Math.pow(r,2);
+}
+
+// wow idfk what im doing todo this tomorrow its 4 am
 // Push stars to array
 
 for (let i = 0; i < starCount; i++) {
-    stars.push({
-        x: Math.random() * width,
-        y: Math.random() * height,
-        radius: Math.random() * 1 + 1,
-        vx: Math.floor(Math.random() * 50) - 25,
-        vy: Math.floor(Math.random() * 50) - 25
-    });
+    let starX = Math.random() * width;
+    let starY = Math.random() * height;
+    let distX = Math.abs(starX - width / 2);
+    let distY = Math.abs(starY - height / 2);
+    let starR = Math.pow(Math.pow(distX, 2) + Math.pow(distY, 2), 0.5);
+
+    console.log("radius: " + starR + " P: " + starP(starR));
+    if (Math.random() < starP(starR)) {
+
+        stars.push({
+            x: starX,
+            y: starY,
+            radius: Math.random() * 1 + 1,
+            vx: Math.floor(Math.random() * 50) - 25,
+            vy: Math.floor(Math.random() * 50) - 25
+        });
+    }
 }
 
 // Draw the scene
